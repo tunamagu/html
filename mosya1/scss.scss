@@ -1,0 +1,283 @@
+/* 全体の設定 */
+$pc: 1024px; // PC
+$sp: 768px; // スマホ
+@mixin pc {
+  @media(min-width: ($sp)) {
+    @content;
+  }
+}
+@mixin sp {
+  @media(max-width: ($sp)) {
+    @content;
+  }
+}
+
+* {
+  font-family: 'Circular Std Bold',inherit,sans-serif;
+  box-sizing: border-box;
+}
+
+html {
+  width: 100%;
+}
+
+body {
+  position: relative;
+  width: 100%;
+}
+
+a,
+h1,
+h2,
+h3,
+h4,
+h5,
+p {
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  font-size: 40px;
+  font-weight: bold;
+}
+
+h2 {
+  font-size: 28px;
+}
+
+p {
+  font-size: 20px;
+}
+
+.main-container {}
+
+.get-button {
+  padding: 15px 30px;
+  border: 0;
+  border-radius: 3px;
+  background-color: #98ca6c;
+
+  a {
+    font-weight: bold;
+    color: white;
+  }
+
+  a:hover {
+    color: white;
+    text-decoration: none;
+  }
+}
+// header
+
+header {
+  padding: 20px 40px;
+  border-bottom: solid 1px #efefef;
+
+  img {
+    height: 30px;
+  }
+
+  p {
+    font-size: 16px;
+    float: right;
+  }
+
+  p:hover {
+    opacity: 0.6;
+  }
+}
+
+.top-content {
+  .top-left {
+    display: inline-block;
+    width: 50%;
+    vertical-align: middle;
+    padding: 64px;
+
+    h1 {
+      font-weight: 700;
+      padding-bottom: 20px;
+    }
+  }
+
+  .top-right {
+    display: inline-block;
+    width: 49%;
+    padding: 8%;
+    vertical-align: middle;
+
+    img {
+      width: 100%;
+    }
+  }
+}
+
+.currently-supports {
+  padding: 30px 0;
+  text-align: center;
+  border-top: solid 1px #efefef;
+  border-bottom: solid 1px #efefef;
+}
+
+.currently-supports-title {
+  display: inline;
+  margin-right: 40px;
+}
+
+.surrently-supports-bit {
+  @include pc {
+    width: 160px;
+    display: inline;
+    margin-right: 50px;
+  }
+  @include sp {
+    width: 100%;
+    display: inline-block;
+    margin-right: 0;
+    margin-bottom: 5px;
+  }
+
+  img {
+    width: 40px;
+  }
+
+  p {
+    font-size: 16px;
+    display: inline;
+    padding-left: 20px;
+  }
+}
+
+.section-title {
+  font-size: 40px;
+  font-weight: bold;
+  text-align: center;
+  margin: 50px 0;
+}
+
+.works {
+  @include pc {
+    display: -webkit-inline-flex;
+    display: -ms-inline-flex;
+    display: inline-flex;
+  }
+  @include sp {
+    display: static;
+  }
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+
+  img {
+    @include pc {
+      display: inline-block;
+      width: 50%;
+    }
+    @include sp {
+      display: block;
+      width: 100%;
+    }
+    padding: 4% 12%;
+  }
+}
+
+.img-right {
+  flex-direction: row-reverse;
+
+  img {
+    @include pc {
+      flex-direction: row-reverse;
+    }
+    @include sp {
+      flex-direction: none;
+    }
+  }
+}
+
+.img-left {}
+
+.work-discription {
+  @include pc {
+    display: inline-block;
+    width: 50%;
+    padding: 80px;
+  }
+  @include sp {
+    display: block;
+    width: 100%;
+    padding: 40px;
+  }
+
+  h3 {
+    font-weight: bold;
+  }
+
+  .work-discription-border {
+    width: 40%;
+    border: #75B1EE 3px solid;
+    margin-top: 10px;
+    margin-bottom: 30px;
+  }
+}
+
+.section3 {
+  padding: 50px 0;
+  text-align: center;
+  border-top: solid 1px #efefef;
+
+  h2 {
+    font-weight: bold;
+    margin-bottom: 30px;
+  }
+}
+
+footer {
+  text-align: center;
+  padding: 30px;
+  border-top: solid 1px #efefef;
+
+  .footer-copyright {
+    float: left;
+    font-weight: bold;
+    font-size: 16px;
+  }
+
+  .footer-list {
+    text-align: center;
+    display: inline;
+
+    li {
+      list-style: none;
+      display: inline-block;
+      padding-right: 40px;
+
+      :last {
+        padding-right: 0;
+      }
+
+      a {
+        color: black;
+        text-decoration: none;
+        font-weight: bold;
+      }
+
+      a:hover {
+        opacity: 0.7;
+      }
+    }
+  }
+
+  .footer-icon {
+    float: right;
+
+    .icon {
+      color: gray;
+      font-size: 1.5em;
+    }
+
+    a {
+      padding-right: 40px;
+    }
+  }
+}
