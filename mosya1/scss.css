@@ -143,9 +143,9 @@ header p:hover {
 }
 
 .works {
-  align-items: center;
   position: relative;
   overflow: hidden;
+  padding : 2%;
 }
 
 @media (min-width: 1024px) {
@@ -163,6 +163,7 @@ header p:hover {
 }
 
 .works img {
+  width : 100%;
   padding: 4% 12%;
 }
 
