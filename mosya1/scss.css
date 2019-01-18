@@ -108,7 +108,7 @@ header p:hover {
   margin-right: 40px;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 1024px) {
   .surrently-supports-bit {
     width: 160px;
     display: inline;
@@ -148,7 +148,7 @@ header p:hover {
   overflow: hidden;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 1024px) {
   .works {
     display: -webkit-inline-flex;
     display: -ms-inline-flex;
@@ -166,7 +166,7 @@ header p:hover {
   padding: 4% 12%;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 1024px) {
   .works img {
     display: inline-block;
     width: 50%;
@@ -184,7 +184,7 @@ header p:hover {
   flex-direction: row-reverse;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 1024pxx) {
   .img-right img {
     flex-direction: row-reverse;
   }
@@ -196,7 +196,7 @@ header p:hover {
   }
 }
 
-@media (min-width: 768px) {
+@media (min-width: 1024px) {
   .work-discription {
     display: inline-block;
     width: 50%;
